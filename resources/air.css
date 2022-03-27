@@ -175,6 +175,10 @@ img.icon {
     padding: 6px;
 }
 
+a {
+    text-decoration: none;
+}
+
 a,
 a:visited {
     color: #3498db;
