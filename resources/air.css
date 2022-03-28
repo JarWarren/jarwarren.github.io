@@ -158,11 +158,9 @@ textarea {
     max-width: 100%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
-
 body {
     color: #444;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     margin: 6rem auto 1rem;
     max-width: 48rem;
@@ -171,26 +169,26 @@ body {
 
 img.circle {
     border-radius: 50%;
-    height: 200px;
+    aspect-ratio: 1;
     margin: 0 auto;
     width: 200px;
 }
 
 img.squareLogo {
     width: 64px;
-    height: 64px;
+    aspect-ratio: 1;
     padding: 6px;
 }
 
 img.roundedLogo {
     width: 128px;
-    height: 128px;
     border-radius: 24%;
+    aspect-ratio: 1;
 }
 
 img.icon {
     width: 16px;
-    height: 16px;
+    aspect-ratio: 1;
     padding: 6px;
 }
 
