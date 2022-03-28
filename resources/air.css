@@ -171,26 +171,26 @@ body {
 
 img.circle {
     border-radius: 50%;
-    height: 200px;
+    aspect-ratio: 1;
     margin: 0 auto;
     width: 200px;
 }
 
 img.squareLogo {
     width: 64px;
-    height: 64px;
+    aspect-ratio: 1;
     padding: 6px;
 }
 
 img.roundedLogo {
     width: 128px;
-    height: 128px;
     border-radius: 24%;
+    aspect-ratio: 1;
 }
 
 img.icon {
     width: 16px;
-    height: 16px;
+    aspect-ratio: 1;
     padding: 6px;
 }
 
