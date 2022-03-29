@@ -75,12 +75,16 @@ html {
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+td {
+    outline: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 6px;
 }
 
 tr:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color:rgba(0, 0, 0, 0.06);
 }
 
 body {
@@ -167,6 +171,10 @@ body {
     text-align: center;
 }
 
+img {
+    vertical-align: middle;
+}
+
 img.circle {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -181,16 +189,16 @@ img.squareLogo {
 }
 
 img.roundedLogo {
-    width: 128px;
+    width: 80px;
     border-radius: 24%;
     aspect-ratio: 1;
+    padding: 6px;
 }
 
 img.icon {
     width: 16px;
     aspect-ratio: 1;
     padding: 6px;
-    vertical-align: middle;
 }
 
 a {
