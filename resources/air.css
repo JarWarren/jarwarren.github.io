@@ -153,16 +153,13 @@ small,
 /* https://github.com/mrmrs/fluidity */
 
 img,
+iframe,
+canvas,
 video,
 svg,
 select,
 textarea {
     max-width: 100%;
-    padding: 6px;
-}
-
-canvas {
-    padding: 6px;
 }
 
 body {
