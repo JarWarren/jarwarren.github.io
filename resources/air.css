@@ -160,6 +160,7 @@ svg,
 select,
 textarea {
     max-width: 100%;
+    padding: 6px;
 }
 
 body {
@@ -185,20 +186,17 @@ img.circle {
 img.squareLogo {
     width: 64px;
     aspect-ratio: 1;
-    padding: 6px;
 }
 
 img.roundedLogo {
     width: 80px;
     border-radius: 24%;
     aspect-ratio: 1;
-    padding: 6px;
 }
 
 img.icon {
     width: 16px;
     aspect-ratio: 1;
-    padding: 6px;
 }
 
 a {
