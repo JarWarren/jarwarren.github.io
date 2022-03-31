@@ -80,7 +80,6 @@ table {
 
 td {
     outline: 1px solid rgba(0, 0, 0, 0.24);
-    padding: 6px;
 }
 
 tr:hover {
@@ -171,9 +170,14 @@ body {
     text-align: center;
 }
 
+img,
+td,
+footer {
+    padding: 6px;
+}
+
 img {
     vertical-align: middle;
-    padding: 6px;
 }
 
 img.circle {
@@ -236,4 +240,8 @@ li {
 
 p {
     color: #777;
+}
+
+footer {
+    font-size: x-small;
 }
