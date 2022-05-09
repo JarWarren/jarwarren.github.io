@@ -1,3 +1,4 @@
-My website -> [here](https://jarwarren.github.io)
+A place where I put some things I make.
 
-CSS forked from -> [here](https://github.com/markdowncss/air)
+- [Website](https://jarwarren.github.io)
+- [CSS](https://github.com/markdowncss/air)
