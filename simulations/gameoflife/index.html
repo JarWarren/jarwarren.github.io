@@ -12,23 +12,26 @@
 <hr class="small"/>
 <!-- <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe> -->
 <!-- <br> -->
- Built in Godot 4.0 alpha 7. Literally "waiting for Godot" 4 to support html5 export. Until then, this page is a WIP.
+ Currently "waiting for Godot" 4 to support html5 export. Until then, this page is a WIP.
 <!-- <caption>(press enter to start)</caption> -->
 <h2>Development</h2>
 <p>
-    Lately I've developed an interest in simulations. Kind of like a relaxing game
+    Lately I've developed an interest in simulations. Relaxing games
     where the player provides only an initial state and watches it play out.
-    <br>
+    <br><br>
     Conway's Game of Life is one that I've personally spent a good few hours playing
     over the years. The simple ruleset makes it very approachable while still being
     sufficiently deep to stay interesting.
-    <br>
-    As with most of my fun projects, this was built in Godot. The board is made from a
-    single texture tiled across the screen. Live cells are just modulated to a blue color.
+    <br><br>
+    For the uninitiated, the Game of Life demonstrates <i>emergence</i>; a phenomenon where the properties
+    of the whole are different from the sum of its parts. Individually, cells merely toggle
+    between on and off - but when put together, they exhibit complex, lifelike behavior.
+    <br><br>
+    I created the board from a single texture tiled across the screen. Live cells are just modulated blue.
     Each pass, a new generation is created in memory by looping over the cells and determining
     whether they should live or die. Once the final cell is accounted for, the new generation
-    replaces the old, <i>ad infinitum</i>.
-    <br>
+    replaces the old, ad infinitum.
+    <br><br>
     I left in the "Act of God" ability to alter the game's state while running. Technically this
     ruins it, but it's also more fun and I couldn't bring myself to disable it.
     <br>
@@ -36,9 +39,9 @@
 ~
 <h2>Links</h2>
 <p>
-    Game engine - <a href="https://godotengine.org/" target="_blank">Godot</a>.
+    Game engine - <a href="https://godotengine.org/" target="_blank">Godot</a>
     <br>
-    Source code - <a href="https://www.github.com/jarwarren/gameoflife" target="_blank">GitHub</a>.
+    Source code - <a href="https://www.github.com/jarwarren/gameoflife" target="_blank">GitHub</a>
 </p>
 ~
 <footer>
