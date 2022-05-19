@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/resources/air.css" rel="stylesheet" type="text/css"/>
+    <link href="/resources/favicon.ico" rel="shortcut icon" type="image/ico"/>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Game of Life</title>
+</head>
+<body>
+<header><h1>Game of Life</h1></header>
+<a href="/simulations/">Back to Simulations</a>
+<hr class="small"/>
+<!-- <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe> -->
+<!-- <br> -->
+ Built in Godot 4.0 alpha 7. Literally "waiting for Godot" 4 to support html5 export. Until then, this page is a WIP.
+<!-- <caption>(press enter to start)</caption> -->
+<h2>Development</h2>
+<p>
+    Lately I've developed an interest in simulations. Kind of like a relaxing game
+    where the player provides only an initial state and watches it play out.
+    <br>
+    Conway's Game of Life is one that I've personally spent a good few hours playing
+    over the years. The simple ruleset makes it very approachable while still being
+    sufficiently deep to stay interesting.
+    <br>
+    As with most of my fun projects, this was built in Godot. The board is made from a
+    single texture tiled across the screen. Live cells are just modulated to a blue color.
+    Each pass, a new generation is created in memory by looping over the cells and determining
+    whether they should live or die. Once the final cell is accounted for, the new generation
+    replaces the old, <i>ad infinitum</i>.
+    <br>
+    I left in the "Act of God" ability to alter the game's state while running. Technically this
+    ruins it, but it's also more fun and I couldn't bring myself to disable it.
+    <br>
+</p>
+~
+<h2>Links</h2>
+<p>
+    Game engine - <a href="https://godotengine.org/" target="_blank">Godot</a>.
+    <br>
+    Source code - <a href="https://www.github.com/jarwarren/gameoflife" target="_blank">GitHub</a>.
+</p>
+~
+<footer>
+    <a href="https://jarwarren.github.io">jarwarren.github.io</a>
+</footer>
+</body>
+</html>
