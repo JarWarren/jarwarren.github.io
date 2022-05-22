@@ -25,14 +25,27 @@ WIP
     <br><br>
     For the uninitiated, the Game of Life demonstrates <i>emergence</i>; a phenomenon where the properties
     of the whole are different from the sum of its parts. Individually, cells merely toggle
-    between on and off - but when put together, they exhibit complex, lifelike behavior.
+    on and off - but when put together, they exhibit complex, lifelike behavior.
     <br><br>
-    I created the board from a single texture tiled across the screen. Live cells are just modulated blue.
+    I created the board from a single texture tiled across the screen. Live cells are modulated blue.
     Each pass, a new generation is created in memory by looping over the cells and determining
     whether they should live or die. Once the final cell is accounted for, the new generation
     replaces the old, ad infinitum.
     <br><br>
-    I left in the "Act of God" ability to alter the game's state while running. Technically this
+    This naive approach is an easy way to get a working implementation, but the larger the map, the exponentially
+    more expensive it becomes to iterate over each tile. I came accross an algorithm called Hashlife
+    which takes advantage of the many repeating patterns and caches them in an octree. Additionally, you get
+    to ignore all of the empty space that occupies most of the board. It would probably take
+    more time that I'm willing to spend to figure it out, but it did give me an idea to meet in the middle.
+    <br><br>
+    My idea was to store live cells in a set and iterate only over the set each generation, looking up and counting neighbors
+    to generate each next generation. You wouldn't get nearly the speedup from something like Hashlife,
+    but it would be a significant performance improvement over time, as you ignore all dead cells.
+    <br><br>
+    Shockingly, Godot has no built-in hash set. Perhaps I'll revisit this project when it implements sets. Or maybe
+    I'll even contribute myself once I'm more familiar with the engine.
+    <br><br>
+    As a final note, I left in "Acts of God" - the ability to alter the game's state while running. Technically this
     ruins it, but it's also more fun and I couldn't bring myself to disable it.
     <br>
 </p>
