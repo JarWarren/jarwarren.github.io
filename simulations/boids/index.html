@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="/resources/air.css" rel="stylesheet" type="text/css"/>
+  <link href="/resources/favicon.ico" rel="shortcut icon" type="image/ico"/>
+  <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Boids</title>
+</head>
+<body>
+<header><h1>Boids</h1></header>
+<a href="/simulations/">Back to Simulations</a>
+<hr class="small"/>
+<!-- <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe> -->
+WIP
+<br>
+"Waiting for Godot" 4 to support HTML5
+<h2>Development</h2>
+<p>
+  In my recent adventures across the internet, I came across Boids. It's a fantastic
+  introductory project to swarm intelligence and agent-based models, fancy
+  terms for the way complex behaviors arise from many individuals following simple rules.
+  <br><br>
+  This particular algorithm models flocking behavior in boids (bird-oid objects) when 3 rules are
+  adhered to.
+  <br>
+  Cohesion - boids group together.
+  <br>
+  Separation - boids don't collide.
+  <br>
+  Alignment - boids steer in the same direction.
+  <br><br>
+  Like real life birds, boids don't have awareness of all other individuals in the flock,
+  so their observance of the rules is only in relation to boids in their vicinity.
+  <br><br>
+  To make them more lifelike, I added the ability to perch. All of these rules can be toggled off
+  to see what difference they make.
+  <br><br>
+  My favorite part is that the algorithm is easily extended to 3D, so this was my first opportunity to use Godot 3D.
+  It's not quite as straightforward as Unity but still very good. In the end, my 3D boids are
+  elongated blue prisms that look more like fish than anything else.
+  <br>
+</p>
+~
+<h2>Links</h2>
+<p>
+  Game engine - <a href="https://godotengine.org/" target="_blank">Godot</a>
+  <br>
+  Source code - <a href="https://www.github.com/jarwarren/boids" target="_blank">GitHub</a>
+</p>
+~
+<footer>
+  <a href="https://jarwarren.github.io">jarwarren.github.io</a>
+</footer>
+</body>
+</html>
