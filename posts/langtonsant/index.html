@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="/coi-serviceworker.js"></script>
     <link href="/resources/air.css" rel="stylesheet" type="text/css"/>
     <link href="/resources/favicon.ico" rel="shortcut icon" type="image/ico"/>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
@@ -8,40 +9,32 @@
 </head>
 <body>
 <header><h1>Langton's Ant</h1></header>
-<a href="/simulations">Back to Simulations</a>
+<a href="/posts">Back to Posts</a>
 <hr class="small"/>
-<!-- <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe> -->
-WIP
-<br>
-"Waiting for Godot" 4 to support HTML5
+ <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe>
 <h2>Development</h2>
 <p>
-    I only found out about Langton's Ant shortly after implementing the Game of Life.
-    Even though they're visually similar, the rules are distinct enough to provide a
-    completely different experience.
+    Langton's Ant is another cellular automata.
     <br><br>
-    Collisions are undefined by the "official rules" which only
-    accommodate a single ant - and I think the game is better played with a single ant -
-    but it still felt necessary to allow more than one for fun's sake.
-    Since it was up to me, I went with the simplest resolution and made overlapping
+    The official rules only accommodate a single ant, but I allow as many as you want for fun's sake.
+    Since it was up to me, I went with the simplest collision resolution and made overlapping
     ants kill each other.
     <br><br>
-    As before, I couldn't help but to leave in the ability to alter the game's state mid-simulation.
+    As with Game of Life, I allow altering the state mid-simulation.
     <br><br>
-    One perplexing issue is that if you place enough ants, they skip forward on occasion in order to "keep up".
-    I can't tell if this is an issue with Godot or my code, since it (unintuitively) only surfaces at <i>low speeds</i>,
-    despite perfect performance at max speed. Either way, state is unaffected and it's only a visual artifact.
-    <br><br>
-    These are turning out to be fun exercises. I think I'll do one or two more famous projects before
-    working on something from my own mind.
+    If you place enough ants, they skip forward on occasion.
+    I can't tell if this is an issue with Godot or my code, since it only surfaces at <i>low speeds</i>. It's only a visual artifact and state is unaffected.
     <br>
 </p>
 ~
-<h2>Links</h2>
 <p>
-    Game engine - <a href="https://godotengine.org/" target="_blank">Godot</a>
-    <br>
     Source code - <a href="https://www.github.com/jarwarren/ant" target="_blank">GitHub</a>
+    <br><br>
+    <a href="https://godotengine.org/" target="_blank">
+        <img alt="Godot Engine" class="squareLogo" src="/resources/godotlogo.webp"/>
+    </a>
+    <br>
+    Built with Godot
 </p>
 ~
 <footer>
