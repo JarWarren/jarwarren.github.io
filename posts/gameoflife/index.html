@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/resources/air.css" rel="stylesheet" type="text/css"/>
+    <link href="/resources/favicon.ico" rel="shortcut icon" type="image/ico"/>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Game of Life</title>
+</head>
+<body>
+<header><h1>Game of Life</h1></header>
+<a href="/posts">Back to Posts</a>
+<hr class="small"/>
+ <iframe src="/posts/gameoflife/game/gameoflife.html" style="width: 640px; aspect-ratio: 1.77;"></iframe>
+<br>
+<h2>Development</h2>
+<p>
+    I love agent-based simulations and went through a phase a little while ago where I built some of the classics.
+    The first was Conways' Game of Life.
+    <br><br>
+    The Game of Life is a famous example of emergence. A phenomenon where the properties of the whole are
+    different from the sum of its parts. Individually, cells merely toggle on and off. Together, they exhibit
+    complex, lifelike behavior.
+    <br><br>
+    The board is a single texture tiled across the screen. Live cells are modulated blue.
+    Each pass, a new generation is created in memory by visiting every cell and determining
+    whether it should live or die. Once the final cell is accounted for, the new generation
+    replaces the old, ad infinitum.
+    This implementation is a simple, naive one that works great on a small board but definitely doesn't scale.
+    <br><br>
+    I left in "Acts of God" - the ability to alter the game's state while running. Technically this
+    ruins the simulation but it's more fun.
+    <br>
+</p>
+~
+<h2>Links</h2>
+<p>
+    Source code - <a href="https://www.github.com/jarwarren/gameoflife" target="_blank">GitHub</a>
+    <br><br>
+    <a href="https://godotengine.org/" target="_blank">
+        <img alt="Godot Engine" class="squareLogo" src="/resources/godotlogo.webp"/>
+    </a>
+    <br>
+    Built with Godot
+</p>
+~
+<footer>
+    <a href="https://jarwarren.github.io">jarwarren.github.io</a>
+</footer>
+</body>
+</html>
