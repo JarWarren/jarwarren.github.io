@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="/coi-serviceworker.js"></script>
   <link href="/resources/air.css" rel="stylesheet" type="text/css"/>
   <link href="/resources/favicon.ico" rel="shortcut icon" type="image/ico"/>
   <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
@@ -8,20 +9,13 @@
 </head>
 <body>
 <header><h1>Boids</h1></header>
-<a href="/simulations">Back to Simulations</a>
+<a href="/posts">Back to Posts</a>
 <hr class="small"/>
-<!-- <iframe src="game.html" style="width: 640px; aspect-ratio: 1.77;"></iframe> -->
-WIP
-<br>
-"Waiting for Godot" 4 to support HTML5
+ <iframe src="/posts/boids/game/Boids.html" style="width: 640px; aspect-ratio: 1.77;"></iframe>
 <h2>Development</h2>
 <p>
-  In my recent adventures across the internet, I came across Boids. It's a fantastic
-  introductory project to swarm intelligence and agent-based models, fancy
-  terms for the way complex behaviors arise from many individuals following simple rules.
-  <br><br>
-  This particular algorithm models flocking behavior in boids (bird-oid objects) when 3 rules are
-  adhered to.
+  Boids (bird-oid objects) is another well known agent-based simulation.
+  Flocking behavior arises through adherence to three simple rules:
   <br>
   Cohesion - boids group together.
   <br>
@@ -36,8 +30,8 @@ WIP
   to see what difference they make.
   <br><br>
   My favorite part is that the algorithm is easily extended to 3D, so this was my first opportunity to use Godot 3D.
-  It's not quite as straightforward as Unity but still very good. In the end, my 3D boids are
-  elongated blue prisms that look more like fish than anything else.
+  At the time of writing, it wasn't quite as straightforward as Unity but still very good. My 3D boids are supposed to
+  resemble fish.
   <br>
 </p>
 ~
